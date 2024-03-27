@@ -1,0 +1,40 @@
+INFO: mock.py version 5.4 starting (python version = 3.9.14, NVR = mock-5.4-1.el9), args: /usr/libexec/mock/mock -r epel-9-x86_64-bbb --enable-network --addrepo /opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS/ --resultdir /opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS-TMP/ --no-clean /opt/bigbluebutton/rpmbuilds/v2.7.6/SRPMS/maven-assembly-plugin-3.3.0-8.el9.src.rpm --rpmbuild-opts=--nocheck --no-cleanup-after
+Start(bootstrap): init plugins
+INFO: selinux enabled
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: selinux enabled
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+INFO: Start(/opt/bigbluebutton/rpmbuilds/v2.7.6/SRPMS/maven-assembly-plugin-3.3.0-8.el9.src.rpm)  Config(rhel+epel-9-x86_64)
+Mock Version: 5.4
+INFO: Mock Version: 5.4
+INFO: Package manager dnf detected and used (fallback)
+INFO: Package manager dnf detected and used (direct choice)
+WARNING: Leftover process 2520840 is being killed with signal Signals.SIGTERM: /usr/bin/python3.9 /usr/bin/dnf-3 builddep --installroot /var/lib/mock/rhel+epel-9-x86_64/root/ --releasever 9 --setopt=deltarpm=False --setopt=allow_vendor_change=yes --allowerasing --disableplugin=local --disableplugin=spacewalk --disableplugin=versionlock /var/lib/mock/rhel+epel-9-x86_64/root/builddir/build/SRPMS/python-django-oauth-toolkit-1.7.1-1.el9.buildreqs.nosrc.rpm --setopt=tsflags=nocontexts
+WARNING: Leftover process 2520840 is being killed with signal Signals.SIGKILL: /usr/bin/python3.9 /usr/bin/dnf-3 builddep --installroot /var/lib/mock/rhel+epel-9-x86_64/root/ --releasever 9 --setopt=deltarpm=False --setopt=allow_vendor_change=yes --allowerasing --disableplugin=local --disableplugin=spacewalk --disableplugin=versionlock /var/lib/mock/rhel+epel-9-x86_64/root/builddir/build/SRPMS/python-django-oauth-toolkit-1.7.1-1.el9.buildreqs.nosrc.rpm --setopt=tsflags=nocontexts
+ERROR: Exception(/opt/bigbluebutton/rpmbuilds/v2.7.6/SRPMS/maven-assembly-plugin-3.3.0-8.el9.src.rpm) Config(rhel+epel-9-x86_64) 0 minutes 0 seconds
+INFO: Results and/or logs in: /opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS-TMP/
+ERROR: Command failed: 
+ # /usr/bin/systemd-nspawn -q -M bdb952c4fda14c1c944834d299261eb3 -D /var/lib/mock/rhel+epel-9-x86_64-bootstrap/root -a --console=pipe --setenv=TERM=vt100 --setenv=SHELL=/bin/bash --setenv=HOME=/builddir --setenv=HOSTNAME=mock --setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin '--setenv=PROMPT_COMMAND=printf "\033]0;<mock-chroot>\007"' '--setenv=PS1=<mock-chroot> \s-\v\$ ' --setenv=LANG=C.UTF-8 --resolv-conf=off /bin/rpm -qa --root /var/lib/mock/rhel+epel-9-x86_64/root
+Directory tree /var/lib/mock/rhel+epel-9-x86_64-bootstrap/root is currently busy.
+
+Directory walk started
+Directory walk done - 16 packages
+Temporary output repo path: /opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS/.repodata/
+Preparing sqlite DBs
+Pool started (with 5 workers)
+Pool finished
+INFO: mock.py version 5.4 starting (python version = 3.9.14, NVR = mock-5.4-1.el9), args: /usr/libexec/mock/mock -r epel-9-x86_64-bbb --clean
+Start(bootstrap): init plugins
+INFO: selinux enabled
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: selinux enabled
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Start: clean chroot
+Finish: clean chroot
+Finish: run
