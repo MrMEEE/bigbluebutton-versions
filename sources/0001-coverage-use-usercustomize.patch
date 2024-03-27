@@ -1,0 +1,19 @@
+From cd87af9da739da12b0dd4bf104ce4139388c722b Mon Sep 17 00:00:00 2001
+From: Yaakov Selkowitz <yselkowi@redhat.com>
+Date: Mon, 16 Oct 2023 17:56:46 -0400
+Subject: [PATCH] coverage: use usercustomize
+
+Providing sitecustomize clobbers any system-installed module, such as
+that in Fedora's flatpak-runtime-config (which adds the /app prefix).
+---
+ test/coverage/{sitecustomize.py => usercustomize.py} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename test/coverage/{sitecustomize.py => usercustomize.py} (100%)
+
+diff --git a/test/coverage/sitecustomize.py b/test/coverage/usercustomize.py
+similarity index 100%
+rename from test/coverage/sitecustomize.py
+rename to test/coverage/usercustomize.py
+-- 
+2.41.0
+
