@@ -1,0 +1,99 @@
+INFO: mock.py version 5.4 starting (python version = 3.9.14, NVR = mock-5.4-1.el9), args: /usr/libexec/mock/mock -r epel-9-x86_64-bbb --enable-network --addrepo /opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS/ --resultdir /opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS-TMP/ --no-clean /opt/bigbluebutton/rpmbuilds/v2.7.6/SRPMS/apache-commons-jxpath-1.3-52.el9.src.rpm --rpmbuild-opts=--nocheck --no-cleanup-after
+Start(bootstrap): init plugins
+INFO: selinux enabled
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: selinux enabled
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+INFO: Start(/opt/bigbluebutton/rpmbuilds/v2.7.6/SRPMS/apache-commons-jxpath-1.3-52.el9.src.rpm)  Config(rhel+epel-9-x86_64)
+Mock Version: 5.4
+INFO: Mock Version: 5.4
+Start(bootstrap): chroot init
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start(bootstrap): cleaning package manager metadata
+Finish(bootstrap): cleaning package manager metadata
+INFO: Package manager dnf detected and used (fallback)
+Finish(bootstrap): chroot init
+Start: chroot init
+INFO: calling preinit hooks
+INFO: enabled root cache
+Start: unpacking root cache
+Finish: unpacking root cache
+INFO: enabled package manager cache
+Start: cleaning package manager metadata
+Finish: cleaning package manager metadata
+INFO: enabled HW Info plugin
+INFO: Package manager dnf detected and used (direct choice)
+INFO: Buildroot is handled by package management downloaded with a bootstrap image:
+  rpm-4.16.1.3-27.el9_3.x86_64
+  python3-dnf-4.14.0-8.el9.noarch
+  python3-dnf-plugins-core-4.3.0-11.el9_3.noarch
+  yum-4.14.0-8.el9.noarch
+Finish: chroot init
+Start: build phase for apache-commons-jxpath-1.3-52.el9.src.rpm
+Start: build setup for apache-commons-jxpath-1.3-52.el9.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1708992000
+Wrote: /builddir/build/SRPMS/apache-commons-jxpath-1.3-52.el9.src.rpm
+No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+Updating Subscription Management repositories.
+Unable to read consumer identity
+
+This system is not registered with an entitlement server. You can use subscription-manager to register.
+
+/opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS/                                                                                                              [===                                                                                                                                              ] ---  B/s |   0  B     --:-- ETA/opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS/                                                                                                                                                                                                                                                                  2.9 MB/s | 3.0 kB     00:00    
+/opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS/                                                                                                              [===                                                                                                                                              ] ---  B/s |   0  B     --:-- ETA/opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS/                                                                                                                                                                                                                                                                  1.5 MB/s | 6.4 kB     00:00    
+Red Hat Enterprise Linux - BaseOS                                                                                                                      [   ===                                                                                                                                           ] ---  B/s |   0  B     --:-- ETARed Hat Enterprise Linux - BaseOS                                                                                                                                                                                                                                                                           16 kB/s | 4.1 kB     00:00    
+Red Hat Enterprise Linux - AppStream                                                                                                                   [      ===                                                                                                                                        ] ---  B/s |   0  B     --:-- ETARed Hat Enterprise Linux - AppStream                                                                                                                                                                                                                                                                        19 kB/s | 4.5 kB     00:00    
+Red Hat Enterprise Linux - CodeReady Linux Builder                                                                                                     [         ===                                                                                                                                     ] ---  B/s |   0  B     --:-- ETARed Hat Enterprise Linux - CodeReady Linux Builder                                                                                                                                                                                                                                                          19 kB/s | 4.5 kB     00:00    
+Extra Packages for Enterprise Linux 9 - x86_64                                                                                                         [            ===                                                                                                                                  ] ---  B/s |   0  B     --:-- ETAExtra Packages for Enterprise Linux 9 - x86_64                                                                                                         [               ===                                                                                                                               ] ---  B/s |   0  B     --:-- ETAExtra Packages for Enterprise Linux 9 - x86_64                                                                                                                                                                                                                                                              64 kB/s |  33 kB     00:00    
+No matching package to install: 'mvn(org.apache.commons:commons-parent:pom:)'
+No matching package to install: 'mvn(org.apache.maven.plugins:maven-assembly-plugin)'
+Not all dependencies satisfied
+Error: Some packages could not be found.
+Finish: build setup for apache-commons-jxpath-1.3-52.el9.src.rpm
+Finish: build phase for apache-commons-jxpath-1.3-52.el9.src.rpm
+ERROR: Exception(/opt/bigbluebutton/rpmbuilds/v2.7.6/SRPMS/apache-commons-jxpath-1.3-52.el9.src.rpm) Config(rhel+epel-9-x86_64) 0 minutes 4 seconds
+INFO: Results and/or logs in: /opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS-TMP/
+ERROR: Command failed: 
+ # /usr/bin/systemd-nspawn -q -M 6dc7350baff64e5aa131b3b7a3e35a0f -D /var/lib/mock/rhel+epel-9-x86_64-bootstrap/root -a --capability=cap_ipc_lock --bind=/tmp/mock-resolv.kvl6djf5:/etc/resolv.conf --console=pipe --setenv=TERM=vt100 --setenv=SHELL=/bin/bash --setenv=HOME=/var/lib/mock/rhel+epel-9-x86_64/root/installation-homedir --setenv=HOSTNAME=mock --setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin '--setenv=PROMPT_COMMAND=printf "\033]0;<mock-chroot>\007"' '--setenv=PS1=<mock-chroot> \s-\v\$ ' --setenv=LANG=C.UTF-8 --setenv=LC_MESSAGES=C.UTF-8 --resolv-conf=off /usr/bin/dnf-3 builddep --installroot /var/lib/mock/rhel+epel-9-x86_64/root/ --releasever 9 --setopt=deltarpm=False --setopt=allow_vendor_change=yes --allowerasing --disableplugin=local --disableplugin=spacewalk --disableplugin=versionlock /var/lib/mock/rhel+epel-9-x86_64/root//builddir/build/SRPMS/apache-commons-jxpath-1.3-52.el9.src.rpm --setopt=tsflags=nocontexts
+No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+Updating Subscription Management repositories.
+Unable to read consumer identity
+
+This system is not registered with an entitlement server. You can use subscription-manager to register.
+
+/opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS/                                                                                                                                                                                                                                                                  2.9 MB/s | 3.0 kB     00:00    
+/opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS/                                                                                                                                                                                                                                                                  1.5 MB/s | 6.4 kB     00:00    
+Red Hat Enterprise Linux - BaseOS                                                                                                                                                                                                                                                                           16 kB/s | 4.1 kB     00:00    
+Red Hat Enterprise Linux - AppStream                                                                                                                                                                                                                                                                        19 kB/s | 4.5 kB     00:00    
+Red Hat Enterprise Linux - CodeReady Linux Builder                                                                                                                                                                                                                                                          19 kB/s | 4.5 kB     00:00    
+Extra Packages for Enterprise Linux 9 - x86_64                                                                                                                                                                                                                                                              64 kB/s |  33 kB     00:00    
+No matching package to install: 'mvn(org.apache.commons:commons-parent:pom:)'
+No matching package to install: 'mvn(org.apache.maven.plugins:maven-assembly-plugin)'
+Not all dependencies satisfied
+Error: Some packages could not be found.
+
+Directory walk started
+Directory walk done - 16 packages
+Temporary output repo path: /opt/bigbluebutton/rpmbuilds/v2.7.6/RPMS/.repodata/
+Preparing sqlite DBs
+Pool started (with 5 workers)
+Pool finished
+INFO: mock.py version 5.4 starting (python version = 3.9.14, NVR = mock-5.4-1.el9), args: /usr/libexec/mock/mock -r epel-9-x86_64-bbb --clean
+Start(bootstrap): init plugins
+INFO: selinux enabled
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: selinux enabled
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Start: clean chroot
+Finish: clean chroot
+Finish: run
