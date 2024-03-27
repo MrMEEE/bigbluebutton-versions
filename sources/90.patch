@@ -1,0 +1,40 @@
+From 5f8e1cb26386a781131b8d687077c47f718e6c77 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Donnchadh=20=C3=93=20Donnabh=C3=A1in?=
+ <dodonnabhain@poppulo.com>
+Date: Fri, 24 Feb 2023 11:12:13 +0000
+Subject: [PATCH] FREEMARKER-214 - updating JavaCC to 7.0.12
+
+---
+ build.xml | 5 -----
+ ivy.xml   | 2 +-
+ 2 files changed, 1 insertion(+), 6 deletions(-)
+
+diff --git a/build.xml b/build.xml
+index 85dc05d20..a7579b930 100644
+--- a/build.xml
++++ b/build.xml
+@@ -153,11 +153,6 @@
+     />
+     <delete dir="build/javacc-home.tmp" />
+     
+-    <replace
+-      file="${_javaccOutputDir}/FMParser.java"
+-      token="private final LookaheadSuccess"
+-      value="private static final LookaheadSuccess"
+-    />
+     <replace
+       file="${_javaccOutputDir}/FMParserConstants.java"
+       token="public interface FMParserConstants"
+diff --git a/ivy.xml b/ivy.xml
+index dad9ff2fe..8a5afead8 100644
+--- a/ivy.xml
++++ b/ivy.xml
+@@ -168,7 +168,7 @@
+     
+     <!-- parser -->
+     
+-    <dependency org="net.java.dev.javacc" name="javacc" rev="6.1.2" conf="parser->default" />
++    <dependency org="net.java.dev.javacc" name="javacc" rev="7.0.12" conf="parser->default" />
+     
+     <!-- bnd -->
+     
